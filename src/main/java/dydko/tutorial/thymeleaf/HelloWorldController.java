@@ -12,4 +12,10 @@ public class HelloWorldController {
         model.addAttribute("message","Hello World 912");
         return "helloworld";
     }
+    
+    @GetMapping("/style")
+    public String style(Model model) {
+        //model.addAttribute("message","Hello World 912");
+        return "add-css-js-demo";
+    }
 }

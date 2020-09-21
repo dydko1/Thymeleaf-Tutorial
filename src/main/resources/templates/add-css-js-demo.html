@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Miro</title>
+<link th:href="@{/css/main.css}" rel="stylesheet">
+<script type="text/javascript" th:src="@{/js/action.js}"></script>
 </head>
 <body>
-<h1 th:text="'Thymeleaf ' + ${message} + ' App'"></h1>
+<h2>Heading</h2>
+<p> This is text on which me want to apply <strong>very special</strong></p>
+<button type="button" th:onclick="demo()">Show alert</button>
+
 </body>
 </html>
