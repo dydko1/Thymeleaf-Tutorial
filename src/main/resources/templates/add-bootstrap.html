@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Bootstrap to Thymeleaf</title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+	<h2>Heading</h2>
+	<p>
+		This is text on which me want to apply <strong>very special</strong>
+	</p>
+
+	<div class="container">
+		<div class="row">
+			<table>
+				<thead>
+					<tr>
+						<th>Employee First name</th>
+						<th>Employee Last name</th>
+						<th>Employee email</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>Mirek</td>
+						<td>Dyduch</td>
+						<td>miroslaw.dyduch@gmail.com</td>
+					</tr>
+
+					<tr>
+						<td>Mirek</td>
+						<td>Dyduch</td>
+						<td>miroslaw.dyduch@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Mirek</td>
+						<td>Dyduch</td>
+						<td>miroslaw.dyduch@gmail.com</td>
+					</tr>
+
+					<tr></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
