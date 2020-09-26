@@ -25,9 +25,9 @@
 					<tr th:each="user: ${users}">
 						<td th:text="${user.userName}"></td>
 						<td th:text="${user.email}"></td>
-						<td><a class="btn btn-primary" th:if="$user.role == 'ADMIN'">Update</a>
+						<td><a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">Update</a>
 							<a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">Delete</a>
-							<a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">View</a>
+							<a class="btn btn-primary" th:if="${user.role} == 'USER'">View</a>
 						</td>
 					</tr>
 					<tr></tr>

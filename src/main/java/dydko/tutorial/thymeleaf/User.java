@@ -2,13 +2,13 @@ package dydko.tutorial.thymeleaf;
 
 public class User {
 
-	private String username;
+	private String userName;
 	private String email;
 	private String role;
 
-	public User(String username, String email, String role) {
+	public User(String userName, String email, String role) {
 		super();
-		this.username = username;
+		this.userName = userName;
 		this.email = email;
 		this.role = role;
 	}
@@ -16,12 +16,12 @@ public class User {
 	public User() {
 	}
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getEmail() {
