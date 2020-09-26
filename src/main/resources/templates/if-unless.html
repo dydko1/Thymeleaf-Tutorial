@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Bootstrap to Thymeleaf</title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+	<h2>Heading</h2>
+	<p>
+		This is text on which me want to apply <strong>very special</strong>
+	</p>
+
+	<div class="container">
+		<div class="row">
+			<table>
+				<thead>
+					<tr>
+						<th>User name</th>
+						<th>User email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="user: ${users}">
+						<td th:text="${user.userName}"></td>
+						<td th:text="${user.email}"></td>
+						<td><a class="btn btn-primary" th:if="$user.role == 'ADMIN'">Update</a>
+							<a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">Delete</a>
+							<a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">View</a>
+						</td>
+					</tr>
+					<tr></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
